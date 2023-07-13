@@ -42,7 +42,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 // используем классы для карточек
-
     class MenuCard {
         constructor(img, altimg, title, descr, price, parentSelector, ...classes) {
             this.img = img;
@@ -101,7 +100,6 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
     // Modal   
-
     let modalButtons = document.querySelectorAll('[data-modal]'),
         modalContent = document.querySelector('.modal');
 
@@ -145,7 +143,6 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', showModalByScroll);
     
     // Forms
-
     let forms = document.querySelectorAll('form');
 
     let message = {
@@ -203,7 +200,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Thanks Popup
-
     function showThanksModal(message) {
         let prevModalDialog = document.querySelector('.modal__dialog');
 
@@ -233,7 +229,6 @@ window.addEventListener('DOMContentLoaded', () => {
         .then(data => data.json());
 
     // Slider
-
     let slides = document.querySelectorAll('.offer__slide'),
         slider = document.querySelector('.offer__slider'),
         prev = document.querySelector('.offer__slider-prev'),
@@ -416,7 +411,6 @@ window.addEventListener('DOMContentLoaded', () => {
     // })
 
     // Calculator
-
     let result = document.querySelector('.calculating__result span');
 
     let sex, height, weight, age, ratio;
